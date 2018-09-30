@@ -16,6 +16,13 @@ Created on Mon Sep 17 22:32:01 2018
 
 import numpy as np
 import csv
+import urllib2
+
+
+import pandas as pd
+fileurl = "https://raw.githubusercontent.com/HassanNaseri/quantum-computing-handson/master/fruits.csv"
+data_frame = pd.read_csv(fileurl)
+data_dict.set_index('name').T.to_dict('list')
 
 # This is the number of bits used to address the dataset
 # In our example, the shelf number of a fruit is a 4 bit unsigned integer.
@@ -34,7 +41,8 @@ def black_box_check(key, value):
     # Returns inverse (NOT) of 'value' arguments if 'key' and 'value' pair match,
     # otherwise it returns the 'value' argument unchanged.
     # Note: this function is not implemented efficiently, but its details are not importnat!
-    with open('fruits.csv', mode='r') as csvfile:
+    fileurl = "https://raw.githubusercontent.com/HassanNaseri/quantum-computing-handson/master/fruits.csv"
+    with urllib2.urlopen(fileurl) as csvfile:
         data = {row[0]:uint4(row[1]) for row in csv.reader(csvfile)}
     try:
         winner = data[key]
