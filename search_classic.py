@@ -15,14 +15,7 @@ Created on Mon Sep 17 22:32:01 2018
 """
 
 import numpy as np
-import csv
-import urllib2
-
-
 import pandas as pd
-fileurl = "https://raw.githubusercontent.com/HassanNaseri/quantum-computing-handson/master/fruits.csv"
-data_frame = pd.read_csv(fileurl)
-data_dict.set_index('name').T.to_dict('list')
 
 # This is the number of bits used to address the dataset
 # In our example, the shelf number of a fruit is a 4 bit unsigned integer.
@@ -35,17 +28,17 @@ def uint4(int_or_string):
     mask = np.uint8(2**4 - 1)
     return(unit8_type & mask)
 
+fileurl = "https://raw.githubusercontent.com/HassanNaseri/quantum-computing-handson/master/fruits.csv"
+data_frame = pd.read_csv(fileurl)
 
 def black_box_check(key, value):
     # Black box function to encode a winner entry in a dataset
     # Returns inverse (NOT) of 'value' arguments if 'key' and 'value' pair match,
     # otherwise it returns the 'value' argument unchanged.
     # Note: this function is not implemented efficiently, but its details are not importnat!
-    fileurl = "https://raw.githubusercontent.com/HassanNaseri/quantum-computing-handson/master/fruits.csv"
-    with urllib2.urlopen(fileurl) as csvfile:
-        data = {row[0]:uint4(row[1]) for row in csv.reader(csvfile)}
+    data_dict = data_frame.set_index('name').T.to_dict('records')[0]
     try:
-        winner = data[key]
+        winner = uint4(data_dict[key])
     except:
         raise ValueError('Invalid key! There is no ' + key)
     result = value
