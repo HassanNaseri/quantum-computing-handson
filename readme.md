@@ -12,9 +12,9 @@ The Grover's algorithm brings quadratic speedup to the problem of unstructured s
 ### Building the oracle funtion
 ### Building the rotation function
 
-# Jupyter Notebooks in Binder
+## Jupyter Notebooks in Binder [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/HassanNaseri/quantum-computing-handson/master)
 You can find the executable Jupyter Notebook files from the follwing link:
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/HassanNaseri/quantum-computing-handson/master)
+
 https://mybinder.org/v2/gh/HassanNaseri/quantum-computing-handson/master
 
 
