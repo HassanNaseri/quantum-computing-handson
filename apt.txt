@@ -7,6 +7,6 @@ texlive-fonts-recommended
 dvipng
 ghostscript
 # QT and poppler installation
-qt5-default
-qtcreator
-python-poppler
+#qt5-default
+#qtcreator
+#python-poppler
