@@ -33,16 +33,11 @@ def black_box_check(circuit, key, q):
 
 def reflection_about_average(circuit, q):
     # Reflection about average for amplitude amplification
-    circuit.h(q[0])
-    circuit.h(q[1])    
-    circuit.x(q[0])
-    circuit.x(q[1])
+    circuit.h(q)   
+    circuit.x(q)
     circuit.h(q[1])
     circuit.cx(q[0], q[1])
     circuit.h(q[1])
-    circuit.x(q[0])
-    circuit.x(q[1])
-    circuit.h(q[0])
-    circuit.h(q[1])
-
+    circuit.x(q)
+    circuit.h(q)
 
