@@ -5,16 +5,20 @@ This repository contains Jupyter Notebook files to start expremineting with gate
 ## Let's start with a classic search example
 Run **search_classic.ipynb** to review the complexity of an unstructured search problem.
 
+## Qiskit Hello World!
+Run **hello_qiskit.ipynb** to start with Qiskit programming.
+
 ## Grover's algorithm 
 The Grover's algorithm brings quadratic speedup to the problem of unstructured search.
 
 ### Overall structure of the lagorithm
-### Building the oracle funtion
+Run **grover_1.ipynb** to experminet with Grover's algorithm. The task is to complete the code by calling two functions **black_box_check(circuit, key, q)** and **reflection_about_average(circuit, q)**.
+
 ### Building the rotation function
+Run **grover_2.ipynb** to experminet with details of Grover's algorithm. The task is to implement the fucntion **reflection_about_average(circuit, q)**.
 
-## Jupyter Notebooks in Binder [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/HassanNaseri/quantum-computing-handson/master)
-You can find the executable Jupyter Notebook files from the follwing link:
-
+## Jupyter Notebooks in Binder 
+You can find the executable Jupyter Notebook files from the follwing link: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/HassanNaseri/quantum-computing-handson/master)
 https://mybinder.org/v2/gh/HassanNaseri/quantum-computing-handson/master
 
 
