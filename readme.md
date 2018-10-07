@@ -22,8 +22,7 @@ Run **[grover_2.ipynb](grover_2.ipynb)** to experminet with details of Grover's 
 
 ## Jupyter Notebooks in Binder 
 You can find the executable Jupyter Notebook files from the follwing link: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/HassanNaseri/quantum-computing-handson/master)
-[https://mybinder.org/v2/gh/HassanNaseri/quantum-computing-handson/master]
-(https://mybinder.org/v2/gh/HassanNaseri/quantum-computing-handson/master)
+https://mybinder.org/v2/gh/HassanNaseri/quantum-computing-handson/master
 
 
 
