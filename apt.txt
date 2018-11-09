@@ -10,3 +10,4 @@ ghostscript
 #qt5-default
 #qtcreator
 #python-poppler
+#poppler-utils
