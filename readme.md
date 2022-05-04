@@ -6,7 +6,7 @@ These exercise are a collection of python scripts as IPython notebook files. A p
 If you want to run the exercises on your own computer, you will need a working Python environment with required Python modules are **numpy**, **pandas** and **qiskit**. These can be installed using pip. An easy option to setup a new Python environment with all the tools (including Jupyter Notebook) is to download and install Anaconda (https://www.anaconda.com/download/). You can install Qiskit using Anaconda package manager or using 'pip install qiskit'. Moreover, you may signup to IBM Q Experince (https://quantumexperience.ng.bluemix.net/qx/signup) and receive you API tocken (https://quantumexperience.ng.bluemix.net/qx/account/advanced). The API tocken is necessary to configure Qiskit to connecet to IBM Q backend and run your code on an actual quantum computer.
 
 PowerPoint slides of the workshop are in this file:
-**[Quantum_Computing_Handson_ETAW_2019.pptx](Quantum_Computing_Handson_ETAW_2019.pptx)**
+**[Quantum_Computing_Handson_2019.pdf](documentation/Quantum_Computing_Handson_2019.pdf)**
 
 # Simple Exercises for Quantum Computing
 This repository contains Jupyter Notebook files to start expremineting with gate-model quantum computers. The excersises are based on **qiskit** SDK, and are only tested on IBM Q quantum backends.
